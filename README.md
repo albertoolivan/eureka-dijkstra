@@ -7,9 +7,19 @@ rest-dto
 rest-producer
 rest-consumer
 
+You can use run-eureka.sh or follow this steps to test application
+
+0) Git clone projects
+
+$ git clone https://github.com/albertoolivan/eureka-dijkstra.git
+$ git clone https://github.com/albertoolivan/server-registry.git
+$ git clone https://github.com/albertoolivan/rest-dto.git
+$ git clone https://github.com/albertoolivan/rest-producer.git
+$ git clone https://github.com/albertoolivan/rest-consumer.git
 
 1) Install parent project
 
+$ cd eureka-dijkstra
 $ mvn install
 
 2) Build and start up with docker-compose.yml 
