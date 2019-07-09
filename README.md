@@ -2,29 +2,35 @@
 
 Hello this is a parent project related with other four:
 
-service-registry
-rest-dto
-rest-producer
-rest-consumer
+- service-registry: eureka server to registers other services
+- rest-dto: common Dtos between rest projects
+- rest-producer: rest secured with database and dijkstra algorithm
+- rest-consumer: rest to call rest-producer if is connected to eureka server
 
-You can use run-eureka.sh or follow this steps to test application
+You can use `run-eureka.sh` or follow this steps to test application
 
 0) Git clone projects
 
+```
 $ git clone https://github.com/albertoolivan/eureka-dijkstra.git
 $ git clone https://github.com/albertoolivan/server-registry.git
 $ git clone https://github.com/albertoolivan/rest-dto.git
 $ git clone https://github.com/albertoolivan/rest-producer.git
 $ git clone https://github.com/albertoolivan/rest-consumer.git
+```
 
 1) Install parent project
 
+```
 $ cd eureka-dijkstra
 $ mvn install
+```
 
 2) Build and start up with docker-compose.yml 
 
+```
 $ docker-compose up
+```
 
 3) Browse this urls
 
