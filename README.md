@@ -7,7 +7,10 @@ Hello this is a parent project related with other four:
 - rest-producer: rest secured with database and dijkstra algorithm
 - rest-consumer: rest to call rest-producer if is connected to eureka server
 
-You can use `run-eureka.sh` or follow this steps to test application
+You can use `run-eureka.sh` (outside of this project) or follow this steps to test application
+
+![Alt text](eureka-dijkstra.png?raw=true "Eureka Dijkstra")
+
 
 0) Git clone projects
 
@@ -55,3 +58,7 @@ http://localhost:8082/city/info/MAD
 http://localhost:8082/find-itinerary-short?cityOriginId=MAD&cityDestinationId=BER
 http://localhost:8082/find-itinerary-less?cityOriginId=MAD&cityDestinationId=BER
 http://localhost:8082/swagger-ui.html
+
+![Alt text](server-registry.png?raw=true "server-registry")
+
+![Alt text](rest-consumer.png?raw=true "rest-consumer")
