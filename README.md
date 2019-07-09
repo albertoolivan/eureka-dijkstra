@@ -1,11 +1,11 @@
 # eureka-dijkstra
 
-Hello this is a parent project related with other four:
+eureka-dijkstra is a parent project compose of other three:
 
-- service-registry: [spring cloud netflix](https://spring.io/projects/spring-cloud-netflix) server to registers other clients
-- rest-dto: common Dtos between rest projects
-- rest-producer: client rest [secured](https://spring.io/projects/spring-security) with database and [dijkstra algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) ( [thanks vogella!](https://www.vogella.com/tutorials/JavaAlgorithmsDijkstra/article.html) )
-- rest-consumer: client rest ask server-registry to call rest-producer (possible to balance with more than one rest-producer)
+- [service-registry](https://github.com/albertoolivan/eureka-dijkstra): server [spring cloud netflix](https://spring.io/projects/spring-cloud-netflix) server to registers other clients
+- [rest-dto](https://github.com/albertoolivan/rest-dto): common Dtos between rest projects
+- [rest-producer](https://github.com/albertoolivan/rest-producer): client rest [secured](https://spring.io/projects/spring-security) with database and [dijkstra algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) ( [thanks vogella!](https://www.vogella.com/tutorials/JavaAlgorithmsDijkstra/article.html) )
+- [rest-consumer](https://github.com/albertoolivan/rest-consumer): client rest ask server-registry to call rest-producer (possible to balance with more than one rest-producer)
 
 ![Alt text](220px-Dijkstra_Animation.gif?raw=true "Dijkstra algorithm")
 
