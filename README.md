@@ -7,27 +7,15 @@ rest-dto
 rest-producer
 rest-consumer
 
-###########################
-1.1) Install parent project (H2 database)
+
+1) Install parent project
 
 $ mvn install
 
-2.1) Build and start up with docker-compose.yml (H2 database),
+2) Build and start up with docker-compose.yml 
 
 $ docker-compose up
 
-###########################
-1.1) Install parent project (postgres database)
-
-$ mvn install -P postgres
-
-2.2) Rename docker-compose-postgres.yml (postgres database), 
-
-$ mv docker-compose.yml docker-compose-h2.yml
-$ mv docker-compose-postgres.yml docker-compose.yml
-$ docker-compose up
-
-###########################
 3) Browse this urls
 
 [server-registry]
