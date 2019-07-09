@@ -54,9 +54,9 @@ http://localhost:8098/city/info/MAD
 
 http://localhost:8098/city/all
 
-http://localhost:8098/city/itinerary-short?cityOriginId=MAD&cityDestinationId=BER
+http://localhost:8098/city/itinerary-short?cityOriginId=MAD&cityDestinationId=BER&departureTime=2019-07-10T01:30:00.000Z
 
-http://localhost:8098/city/itinerary-less?cityOriginId=MAD&cityDestinationId=BER
+http://localhost:8098/city/itinerary-less?cityOriginId=MAD&cityDestinationId=BER&departureTime=2019-07-10T01:30:00.000Z
 
 http://localhost:8098/city-distance?cityOriginId=MAD
 
@@ -76,9 +76,9 @@ http://localhost:8082/city/all
 
 http://localhost:8082/city/info/MAD
 
-http://localhost:8082/find-itinerary-short?cityOriginId=MAD&cityDestinationId=BER
+http://localhost:8082/find-itinerary-short?cityOriginId=MAD&cityDestinationId=BER&departureTime=2019-07-10T01:30:00.000Z
 
-http://localhost:8082/find-itinerary-less?cityOriginId=MAD&cityDestinationId=BER
+http://localhost:8082/find-itinerary-less?cityOriginId=MAD&cityDestinationId=BER&departureTime=2019-07-10T01:30:00.000Z
 
 http://localhost:8082/swagger-ui.html
 
