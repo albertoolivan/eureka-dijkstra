@@ -36,10 +36,16 @@ $ docker-compose -f eureka-dijkstra/docker-compose.yml up
 
 3) Browse this urls
 
-[server-registry]
+##server-registry
+
 http://localhost:8761
 
-[rest-producer]
+
+![Alt text](server-registry.png?raw=true "server-registry")
+
+
+##rest-producer
+
 http://localhost:8098
 
 http://localhost:8098/city/info/MAD
@@ -58,7 +64,10 @@ user: user_rest
 password: paSs123_w0rd
 ```
 
-[rest-consumer]
+![Alt text](rest-producer.png?raw=true "rest-producer")
+
+##rest-consumer
+
 http://localhost:8082
 
 http://localhost:8082/city/all
@@ -70,7 +79,5 @@ http://localhost:8082/find-itinerary-short?cityOriginId=MAD&cityDestinationId=BE
 http://localhost:8082/find-itinerary-less?cityOriginId=MAD&cityDestinationId=BER
 
 http://localhost:8082/swagger-ui.html
-
-![Alt text](server-registry.png?raw=true "server-registry")
 
 ![Alt text](rest-consumer.png?raw=true "rest-consumer")
