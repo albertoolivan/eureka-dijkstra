@@ -7,11 +7,11 @@ eureka-dijkstra is a parent project compose of other three:
 - [rest-producer](https://github.com/albertoolivan/rest-producer): client rest [secured](https://spring.io/projects/spring-security) with database and [dijkstra algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) ( [thanks vogella!](https://www.vogella.com/tutorials/JavaAlgorithmsDijkstra/article.html) )
 - [rest-consumer](https://github.com/albertoolivan/rest-consumer): client rest ask server-registry to call rest-producer (possible to balance with more than one rest-producer)
 
-![Alt text](220px-Dijkstra_Animation.gif?raw=true "Dijkstra algorithm")
+![Alt text](images/220px-Dijkstra_Animation.gif?raw=true "Dijkstra algorithm")
 
 You can download **`run-eureka.sh`** and execute to build all project.
 
-![Alt text](eureka-dijkstra.png?raw=true "Eureka Dijkstra")
+![Alt text](images/eureka-dijkstra.png?raw=true "Eureka Dijkstra")
 
 
 0) Git clone projects
@@ -43,7 +43,7 @@ $ docker-compose -f eureka-dijkstra/docker-compose.yml up
 http://localhost:8761
 
 
-![Alt text](server-registry.png?raw=true "server-registry")
+![Alt text](images/server-registry.png?raw=true "server-registry")
 
 
 ##rest-producer
@@ -66,7 +66,7 @@ user: user_rest
 password: paSs123_w0rd
 ```
 
-![Alt text](rest-producer.png?raw=true "rest-producer")
+![Alt text](images/rest-producer.png?raw=true "rest-producer")
 
 ##rest-consumer
 
@@ -82,4 +82,4 @@ http://localhost:8082/find-itinerary-less?cityOriginId=MAD&cityDestinationId=BER
 
 http://localhost:8082/swagger-ui.html
 
-![Alt text](rest-consumer.png?raw=true "rest-consumer")
+![Alt text](images/rest-consumer.png?raw=true "rest-consumer")
