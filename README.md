@@ -2,10 +2,12 @@
 
 Hello this is a parent project related with other four:
 
-- service-registry: eureka server to registers other services
+- service-registry: [spring cloud netflix](https://spring.io/projects/spring-cloud-netflix) server to registers other clients
 - rest-dto: common Dtos between rest projects
-- rest-producer: rest secured with database and dijkstra algorithm
-- rest-consumer: rest to call rest-producer if is connected to eureka server
+- rest-producer: client rest [secured](https://spring.io/projects/spring-security) with database and [dijkstra algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) ( [thanks vogella!](https://www.vogella.com/tutorials/JavaAlgorithmsDijkstra/article.html) )
+- rest-consumer: client rest ask server-registry to call rest-producer (possible to balance with more than one rest-producer)
+
+![Alt text](220px-Dijkstra_Animation.gif?raw=true "Dijkstra algorithm")
 
 You can download **`run-eureka.sh`** and execute to build all project.
 
