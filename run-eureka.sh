@@ -1,5 +1,6 @@
+#!/bin/bash
 
-# this file clone all projects to folder and execute
+# this file clone all projects to local folder and execute
 
 git clone https://github.com/albertoolivan/eureka-dijkstra.git
 

@@ -7,7 +7,7 @@ Hello this is a parent project related with other four:
 - rest-producer: rest secured with database and dijkstra algorithm
 - rest-consumer: rest to call rest-producer if is connected to eureka server
 
-You can use `run-eureka.sh` or follow this steps to test application
+You can download **`run-eureka.sh`** and execute to build all project.
 
 ![Alt text](eureka-dijkstra.png?raw=true "Eureka Dijkstra")
 
