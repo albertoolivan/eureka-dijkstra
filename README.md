@@ -38,7 +38,7 @@ $ docker-compose -f eureka-dijkstra/docker-compose.yml up
 
 3) Browse this urls
 
-##server-registry
+###server-registry
 
 http://localhost:8761
 
@@ -46,7 +46,7 @@ http://localhost:8761
 ![Alt text](images/server-registry.png?raw=true "server-registry")
 
 
-##rest-producer
+###rest-producer
 
 http://localhost:8098
 
@@ -68,7 +68,7 @@ password: paSs123_w0rd
 
 ![Alt text](images/rest-producer.png?raw=true "rest-producer")
 
-##rest-consumer
+###rest-consumer
 
 http://localhost:8082
 
@@ -76,7 +76,11 @@ http://localhost:8082/city/all
 
 http://localhost:8082/city/info/MAD
 
+Short distance between cities with departure time (ISO Time)
+
 http://localhost:8082/find-itinerary-short?cityOriginId=MAD&cityDestinationId=BER&departureTime=2019-07-10T01:30:00.000Z
+
+Less steps between cities with departure time (ISO Time)
 
 http://localhost:8082/find-itinerary-less?cityOriginId=MAD&cityDestinationId=BER&departureTime=2019-07-10T01:30:00.000Z
 
