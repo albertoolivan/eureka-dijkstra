@@ -1,6 +1,6 @@
 # eureka-dijkstra
 
-eureka-dijkstra is a parent project compose of other three:
+eureka-dijkstra is a parent project composed of four projects:
 
 - [service-registry](https://github.com/albertoolivan/eureka-dijkstra): server [spring cloud netflix](https://spring.io/projects/spring-cloud-netflix) server to registers other clients
 - [rest-dto](https://github.com/albertoolivan/rest-dto): common Dtos between rest projects
