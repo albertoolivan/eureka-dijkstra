@@ -1,0 +1,42 @@
+version: '3.3'
+services:
+  server-registry:
+    build: ../server-registry
+    ports:
+      - "8761:8761"
+    tty:
+      true
+    restart:
+      unless-stopped
+  rest-producer-1:
+    build: ../rest-producer
+    ports:
+      - "8098:8098"
+    environment:
+       - SERVER_PORT_BALANCED=8098
+       - REGISTRY_HOST=server-registry
+    tty:
+      true
+    restart:
+      unless-stopped
+  rest-producer-2:
+    build: ../rest-producer
+    ports:
+      - "8099:8099"
+    environment:
+       - SERVER_PORT_BALANCED=8099
+       - REGISTRY_HOST=server-registry
+    tty:
+      true
+    restart:
+      unless-stopped
+  rest-consumer:
+    build: ../rest-consumer
+    ports:
+      - "8082:8082"
+    environment:
+       - REGISTRY_HOST=server-registry
+    tty:
+      true
+    restart:
+      unless-stopped
